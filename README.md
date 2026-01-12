@@ -53,3 +53,24 @@ Ces données permettent de simuler un environnement industriel réaliste.
 ### Lancer le pipeline principal
 ```bash
 python main.py
+```
+
+### Lancer l’agent en mode chat
+```
+python main_chat.py
+```
+
+###Indexer les documents (RAG)
+```
+python rag/ingest.py
+```
+###Interroger les documents
+```
+python rag/query.py
+```
+
+
+
+
+
+
