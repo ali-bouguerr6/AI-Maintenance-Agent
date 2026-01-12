@@ -60,11 +60,11 @@ python main.py
 python main_chat.py
 ```
 
-###Indexer les documents (RAG)
+### Indexer les documents (RAG)
 ```
 python rag/ingest.py
 ```
-###Interroger les documents
+### Interroger les documents
 ```
 python rag/query.py
 ```
