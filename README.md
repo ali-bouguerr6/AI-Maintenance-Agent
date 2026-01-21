@@ -32,7 +32,7 @@ The main objective is to build an AI agent capable of:
 - Session-based conversational memory
 - 100% local execution (no cloud, no external APIs)
 
-## 🔄 Pipeline Overview
+## Pipeline Overview
 
 1. Load machine dataset
 2. Compute industrial KPIs
