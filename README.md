@@ -32,22 +32,34 @@ The main objective is to build an AI agent capable of:
 - Session-based conversational memory
 - 100% local execution (no cloud, no external APIs)
 
+## 🔄 Pipeline Overview
+
+1. Load machine dataset
+2. Compute industrial KPIs
+3. Detect anomalies using business rules
+4. Calculate a risk score per machine
+5. Classify machines by risk level
+6. Retrieve relevant internal documents (RAG)
+7. Generate explanations and recommendations via a local LLM
+
+## Démo 
+
 ## Installation & Execution
 
 - Python 3.10+
 - Ollama (local)
 
-### Instakk dependencies 
+# Install dependencies 
 ```bash
 pip install -r requirements.txt
 ```
 
-### Run the full pipeline
+## Run the full pipeline
 ```bash
 python main.py
 ```
 
-### Run the chat interface
+## Run the chat interface
 ```bash
 python main_chat.py
 ```
