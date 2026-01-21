@@ -43,9 +43,8 @@ The main objective is to build an AI agent capable of:
 7. Generate explanations and recommendations via a local LLM
 
 ## Demo 
-## 🎥 Demo
 
-![AI Maintenance Agent Demo](Agent_demo.gif)
+![](Agent_demo.gif)
 
 ## Installation & Execution
 
