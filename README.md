@@ -42,14 +42,17 @@ The main objective is to build an AI agent capable of:
 6. Retrieve relevant internal documents (RAG)
 7. Generate explanations and recommendations via a local LLM
 
-## Démo 
+## Demo 
+## 🎥 Demo
+
+![AI Maintenance Agent Demo](Agent_demo.gif)
 
 ## Installation & Execution
 
 - Python 3.10+
 - Ollama (local)
 
-# Install dependencies 
+## Install dependencies 
 ```bash
 pip install -r requirements.txt
 ```
