@@ -1,73 +1,57 @@
+# AI Maintenance Agent ⚙️
 
-#  AI Maintenance Agent
-
-AI Maintenance Agent est un projet d’agent intelligent **100 % local** dédié à la **maintenance industrielle prédictive**.  
-Il combine l’analyse de données machines, la détection d’anomalies, l’évaluation des risques et l’explication en langage naturel grâce à l’intelligence artificielle.
-
-L’objectif est d’aider à **anticiper les pannes**, **réduire les arrêts machines** et **faciliter la prise de décision** pour les équipes de maintenance.
-
----
-
-##  Objectifs du projet
-- Exploiter des données industrielles pour surveiller l’état des machines  
-- Détecter automatiquement des anomalies  
-- Calculer un score de risque de défaillance  
-- Fournir des explications compréhensibles via un agent IA  
-- Fonctionner sans cloud, en environnement local  
-
----
-
-##  Fonctionnalités principales
-- Calcul de KPI de maintenance  
-- Détection d’anomalies basée sur des règles métier  
-- Évaluation du niveau de risque (faible / moyen / élevé)  
-- Génération d’explications en langage naturel (LLM local)  
-- RAG (Retrieval Augmented Generation) sur documents techniques  
-- Mode pipeline et mode chat  
+AI Maintenance Agent is a fully local AI-based system designed to assist industrial maintenance teams. The project demonstrates how artificial intelligence can be used to analyze machine data, detect anomalies,anticipate failures, and support decision-making in an industrial context.
 
 
-##  Données utilisées
-Le projet repose sur un dataset de **maintenance prédictive** (type AI4I 2020) contenant :
-- températures
-- vitesse de rotation
-- couple
-- usure des outils
-- indicateurs de défaillance
+##  Project Context
 
-Ces données permettent de simuler un environnement industriel réaliste.
+In the industrial sector, machines are at the core of production processes. Unexpected machine failures can lead to production downtime, delivery delays, and high operational costs.
 
----
+This project aims to illustrate how an AI agent can help monitor machine health, identify risky situations, and recommend preventive maintenance actions, while remaining fully local and secure.
 
-## AI & RAG
-- Utilisation d’un LLM local  
-- Système RAG pour interroger :
-  - procédures de maintenance
-  - politiques de sécurité
-  - fiches machines  
-- Aucune dépendance au cloud → confidentialité des données  
 
----
+## Objectives
 
-## ▶️ Utilisation
+The main objective is to build an AI agent capable of:
 
-### Lancer le pipeline principal
+- Analyzing machine data
+- Detecting anomalies using business rules
+- Computing a risk score for each machine
+- Prioritizing maintenance actions (P1 / P2 / P3)
+- Interacting with users through natural language
+- Using internal documents via a RAG system
+
+
+##  Key Features
+
+- KPI computation (machine failure rate, temperature, tool wear, etc.)
+- Anomaly detection based on business rules
+- Risk score calculation and machine classification (safe / warning / danger)
+- Retrieval-Augmented Generation (RAG) using internal documents
+- Conversational CLI interface
+- Session-based conversational memory
+- 100% local execution (no cloud, no external APIs)
+
+## Installation & Execution
+
+- Python 3.10+
+- Ollama (local)
+
+### Instakk dependencies 
+```bash
+pip install -r requirements.txt
+```
+
+### Run the full pipeline
 ```bash
 python main.py
 ```
 
-### Lancer l’agent en mode chat
-```
+### Run the chat interface
+```bash
 python main_chat.py
 ```
 
-### Indexer les documents (RAG)
-```
-python rag/ingest.py
-```
-### Interroger les documents
-```
-python rag/query.py
-```
 
 
 
